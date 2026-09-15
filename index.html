@@ -7220,5 +7220,15 @@ function renderizarListaMotos() {
     document.addEventListener('mouseup', leitorEndResize);
 })();
 </script>
+<script>
+// Ativa o modo offline: guarda uma copia do app para funcionar sem internet.
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch((erro) => {
+            console.log('Nao foi possivel ativar o modo offline:', erro);
+        });
+    });
+}
+</script>
 </body>
 </html>
