@@ -2,11 +2,15 @@
 // Sempre que voce alterar o index.html e publicar de novo no GitHub,
 // mude o numero da versao abaixo (ex: 'v2', 'v3'...) para que os
 // usuarios recebam a versao nova em vez da copia antiga guardada.
-const CACHE_NAME = 'estoque-app-v1';
+const CACHE_NAME = 'estoque-app-v2';
 
 const ARQUIVOS_PARA_CACHE = [
     './',
     './index.html',
+    './manifest.json',
+    './icon-192.png',
+    './icon-512.png',
+    './icon-512-maskable.png',
     'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js'
